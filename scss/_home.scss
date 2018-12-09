@@ -1,0 +1,48 @@
+#home {
+	margin-top:20px;
+	
+	#banner {
+		position: relative;
+		float: left;
+		width:50%;
+		img {
+			max-width: 360px !important;
+			display: block;
+			margin: 0 auto;
+		}
+
+	}
+
+	.text {
+		position:relative;
+		float: right;
+		width: 35%;
+		padding-top: 120px;
+	}
+
+}
+
+
+@media screen and (max-width:790px) {
+	#home {
+		#banner, .text {
+			float: none;
+			margin:0 auto;
+			width:80%;
+		}
+
+		.text {
+			padding:0;
+			text-align: center !important;
+			margin-top: 50px;
+
+			p {
+				text-align: center !important;
+			}
+		}
+	}
+
+}
+
+
+

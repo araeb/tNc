@@ -1,0 +1,23 @@
+/*
+Theme Name: New T&C Theme
+Description: A theme for the T&C website 2018.
+Author: Abbey Blackwell
+Author URI: http://tableandchairsmusic.om
+Version: 2.0
+.
+*/
+
+@import 'variables';
+@import 'fonts';
+@import 'general';
+@import 'columns';
+@import 'header';
+@import 'home';
+
+
+/* page */
+
+#page {
+	max-width:950px;
+	margin-top:50px;
+}

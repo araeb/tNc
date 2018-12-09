@@ -1,0 +1,268 @@
+/*
+Theme Name: New T&C Theme
+Description: A theme for the T&C website 2018.
+Author: Abbey Blackwell
+Author URI: http://tableandchairsmusic.om
+Version: 2.0
+.
+*/
+/* color */
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  font-style: normal; }
+
+* {
+  outline: none; }
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+p, li {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 300;
+  margin: 5px 0; }
+
+a {
+  color: #6D6E71;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.75s;
+  -webkit-transition: color 0.75s; }
+  a:hover {
+    color: #6D6E71; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin: 5px 0; }
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 200;
+  color: #000; }
+
+p {
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Times New Roman", serif; }
+
+ul li {
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+div {
+  vertical-align: top; }
+
+/* header */
+/* body */
+/* Desktop */
+.col-100 {
+  width: 100%;
+  position: relative;
+  display: inline-block; }
+
+.col-90 {
+  width: 90%;
+  position: relative;
+  display: inline-block; }
+
+.col-80 {
+  width: 79%;
+  position: relative;
+  display: inline-block; }
+
+.col-70 {
+  width: 70%;
+  position: relative;
+  display: inline-block; }
+
+.col-60 {
+  width: 60%;
+  position: relative;
+  display: inline-block; }
+
+.col-50 {
+  width: 50%;
+  position: relative;
+  display: inline-block; }
+
+.col-49 {
+  width: 49%;
+  position: relative;
+  display: inline-block; }
+
+.col-40 {
+  width: 40%;
+  position: relative;
+  display: inline-block; }
+
+.col-30 {
+  width: 30%;
+  position: relative;
+  display: inline-block; }
+
+.col-20 {
+  width: 20%;
+  position: relative;
+  display: inline-block; }
+
+.col-10 {
+  width: 10%;
+  position: relative;
+  display: inline-block; }
+
+.col-8 {
+  width: 8%;
+  position: relative;
+  display: inline-block; }
+
+.col-5 {
+  width: 5%;
+  position: relative;
+  display: inline-block; }
+
+#header {
+  position: relative; }
+  #header .nav-icon {
+    display: none; }
+  #header ul li {
+    display: inline-block;
+    margin-right: 25px; }
+    #header ul li a {
+      font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500; }
+  #header .logo {
+    display: inline-block;
+    margin-top: 20px; }
+    #header .logo a {
+      width: 180px;
+      height: 30px;
+      display: block;
+      background: transparent url(assets/img/logo.png) no-repeat left center;
+      -webkit-transition: background-image 600ms ease-out;
+      -moz-transition: background-image 600ms ease-out;
+      -o-transition: background-image 600ms ease-out;
+      transition: background-image 600ms ease-out; }
+      #header .logo a:hover {
+        background-image: url(assets/img/logo_hover.png); }
+  #header .links {
+    display: inline-block; }
+  #header .social {
+    display: inline-block;
+    margin-top: 5px;
+    z-index: 900; }
+    #header .social li img {
+      width: 15px !important; }
+
+@media screen and (max-width: 1065px) {
+  #header .social {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    #header .social li {
+      display: block !important;
+      margin-bottom: 13px; } }
+
+@media screen and (max-width: 910px) {
+  #header .links {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    #header .links .nav-icon {
+      display: block !important;
+      width: 27px;
+      height: 27px;
+      padding: 10px;
+      cursor: pointer;
+      position: absolute;
+      bottom: -10px;
+      right: 60px; }
+      #header .links .nav-icon div {
+        width: 27px;
+        height: 4px;
+        background-color: #000;
+        margin: 5px 0;
+        border-radius: 4px;
+        transition: background-color 0.75s;
+        -webkit-transition: background-color 0.75s; }
+      #header .links .nav-icon:hover div {
+        background-color: #6D6E71; }
+    #header .links .nav {
+      position: absolute;
+      background-color: #fff;
+      width: 100px;
+      top: 0;
+      right: 50px;
+      z-index: 900;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s;
+      -webkit-transition: visibility 0s, opacity 0.5s; }
+      #header .links .nav ul {
+        padding: 10px;
+        margin: 0; }
+      #header .links .nav li {
+        display: block; }
+      #header .links .nav a {
+        display: block;
+        text-align: left;
+        padding: 5px 10px;
+        line-height: 20px;
+        color: #000;
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        font-weight: 300; }
+        #header .links .nav a:hover {
+          text-decoration: underline;
+          font-weight: 400; }
+    #header .links:hover .nav {
+      display: block;
+      visibility: visible;
+      opacity: 1; } }
+
+#home {
+  margin-top: 20px; }
+  #home #banner {
+    position: relative;
+    float: left;
+    width: 50%; }
+    #home #banner img {
+      max-width: 360px !important;
+      display: block;
+      margin: 0 auto; }
+  #home .text {
+    position: relative;
+    float: right;
+    width: 35%;
+    padding-top: 120px; }
+
+@media screen and (max-width: 790px) {
+  #home #banner, #home .text {
+    float: none;
+    margin: 0 auto;
+    width: 80%; }
+  #home .text {
+    padding: 0;
+    text-align: center !important;
+    margin-top: 50px; }
+    #home .text p {
+      text-align: center !important; } }
+
+/* page */
+#page {
+  max-width: 950px;
+  margin-top: 50px; }
